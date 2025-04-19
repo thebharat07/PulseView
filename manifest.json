@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Developer Tools Widget",
+    "description": "Displays all incoming and outgoing requests and other relevant data.",
+    "version": "1.0",
+    "host_permissions": [      
+    "http://*/*",  
+    "https://*/*" ],
+    "permissions": [
+      "tabs",
+      "webRequest",
+      "activeTab",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["libs/chart.umd.js", "content.js"],
+        "css": ["style.css"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  

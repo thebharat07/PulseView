@@ -1,0 +1,17 @@
+#network-widget {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #network-widget div {
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+  
+  #network-widget strong {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
