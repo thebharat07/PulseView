@@ -63,3 +63,13 @@ A lightweight Chrome extension that provides **real-time monitoring of all netwo
 "host_permissions": [
   "<all_urls>"
 ]
+```
+--- 
+
+## 🧪 Known Limitations
+
+- Chrome **Manifest V3** does not allow request blocking — this extension is **read-only**.
+- Some browser pages (e.g., `chrome://`, PDFs, extensions) won't inject the widget.
+- The widget shows only for sites loaded **after** extension installation.
+- ⚠️ **Note:** This extension is optimized for **Google Chrome**. It may not function correctly in other Chromium-based browsers like Edge, Brave, or Opera due to slight API differences or security restrictions.
+
