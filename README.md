@@ -38,7 +38,10 @@ A lightweight Chrome extension that provides **real-time monitoring of all netwo
 3. Enable **Developer Mode** (top right toggle).
 4. Click **Load Unpacked** and select the folder containing this extension.
 
-![How to Install](https://github.com/user-attachments/assets/97a408ea-3349-48bb-892e-0aad5cf27ddd)
+<video width="320" height="240" autoplay>
+  <source src="https://github.com/user-attachments/assets/97a408ea-3349-48bb-892e-0aad5cf27ddd" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 
