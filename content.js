@@ -20,8 +20,12 @@ function initWidget() {
   widget.style.borderRadius = "10px";
   widget.style.boxSizing = "border-box";
 
+  const logoUrl = chrome.runtime.getURL("libs/pulse.png"); // adjust path if needed
+document.getElementById("pulse-logo").src = logoUrl;
+
+
   widget.innerHTML = `
-    <div id="widget-header" style="cursor: move; font-weight: bold;"><img src="libs/pulse.png" alt="PulseView Logo" style="width: auto; height: 20px;" />PulseView</div>
+    <div id="widget-header" style="cursor: move; font-weight: bold;"><img id="pulse-logo" style="width: 20px; height: 20px; vertical-align: middle;" /> PulseView</div>
     <canvas id="reqChart" style="margin-top: 10px; width:100%; height:180px;"></canvas>
     <div id="log" style="margin-top: 10px; max-height: 100px; overflow-y: auto;"></div>
   `;
