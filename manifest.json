@@ -1,8 +1,11 @@
 {
     "manifest_version": 3,
-    "name": "Developer Tools Widget",
+    "name": "PulseView Widget",
     "description": "Displays all incoming and outgoing requests and other relevant data.",
     "version": "1.0",
+    "icons": {
+  "128": "libs/pulse.png"
+},
     "host_permissions": [      
     "http://*/*",  
     "https://*/*" ],
@@ -23,6 +26,7 @@
       }
     ],
     "action": {
+        "default_icon": "libs/pulse.png",
       "default_popup": "popup.html"
     }
   }
