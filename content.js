@@ -21,8 +21,6 @@ function initWidget() {
   widget.style.boxSizing = "border-box";
 
   const logoUrl = chrome.runtime.getURL("libs/pulse.png"); // adjust path if needed
-document.getElementById("pulse-logo").src = logoUrl;
-
 
   widget.innerHTML = `
     <div id="widget-header" style="cursor: move; font-weight: bold;"><img id="pulse-logo" style="width: 20px; height: 20px; vertical-align: middle;" /> PulseView</div>
@@ -31,6 +29,8 @@ document.getElementById("pulse-logo").src = logoUrl;
   `;
 
   document.body.appendChild(widget);
+
+  document.getElementById("pulse-logo").src = logoUrl;
 
   // Chart init
   const ctx = document.getElementById("reqChart").getContext("2d");
